@@ -1,1 +1,24 @@
-{{outlet}}
+<div class="ui grid">
+  <div class="eight wide column">
+    <div class="image">
+      <img src="assets/images/main-lucy.png" />
+    </div>
+  </div>
+
+
+  <div class="eight wide column">
+    <h3>Experience</h3>
+    <ul>
+      {{#each experience in model}}
+      <li>
+        {{#link-to "about.experience" experience}}
+        {{experience.description}}
+        {{/link-to}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div id="outlet2">
+    {{outlet}}
+  </div>

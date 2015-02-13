@@ -1,1 +1,23 @@
-{{outlet}}
+<div class="ui grid">
+  <div class="eight wide column">
+    <div class="image">
+      <img src="assets/images/piano.png" />
+    </div>
+  </div>
+  <div class="eight wide column">
+    <h3>Interests</h3>
+    <ul>
+      {{#each interest in model}}
+      <li>
+        {{#link-to "personal.interest" interest}}
+        {{interest.description}}
+        {{/link-to}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+<div id="outlet3">
+  {{outlet}}
+</div>
