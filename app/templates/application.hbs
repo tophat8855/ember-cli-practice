@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h1>Lucy van Pelt</h1>
+<div id="nav">
+  {{#link-to 'about'}}About{{/link-to}} |
+  {{#link-to 'personal'}}Personal{{/link-to}} |
+  {{#link-to 'connect'}}Connect{{/link-to}}
+  <br>
+</div>
 
-{{outlet}}
+<div id="outlet">
+  {{outlet}}
+</div>
